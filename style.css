@@ -1,0 +1,39 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 70px;
+}
+
+header .row {
+    --bs-gutter-x: 0;
+}
+
+.ms_logo_small {
+    height: 2rem;
+}
+
+input.bg-secondary[type=search]  {
+    --bs-bg-opacity: .15;
+}
+
+.ms_search_bar {
+    padding: 7px 4px 7px 40px;
+    background: transparent url("img/icons8-search.svg") no-repeat 13px center;
+    background-size: 20px 20px;
+}
+
+.ms_question_icon {
+    font-size: 0.5rem;
+    text-align: center;
+    line-height: 1rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+main {
+    margin-top: 70px;
+}

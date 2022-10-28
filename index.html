@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header class="py-3">
+        <div class="container-fluid row">
+            <div class="col-auto d-flex align-items-center ms-3">
+                <!-- LOGO -->
+                <a href="#" class="text-decoration-none">
+                    <img src="img/logo.svg" alt="logo" class="d-none d-lg-block">
+                    <img src="img/logo-small.png" alt="logo-small" class="d-lg-none ms_logo_small">
+                </a>
+            </div>
+            
+            <div class="col d-flex align-items-center">
+                <!-- SEARCH-BAR -->
+                <form class="w-100 mx-3" role="search">
+                    <input type="search" class="form-control bg-secondary border-0 ms_search_bar" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                </form>
+                
+                <!-- NAV-BAR -->
+                <div class="d-flex align-items-center flex-shrink-0 dropdown me-3">
+                    <a href="#" class="d-none d-lg-block link-secondary text-decoration-none mx-2">
+                        <i class="fa-solid fa-list"></i>
+                    </a>
+
+                    <a href="#" class="d-none d-lg-block text-white bg-secondary rounded-circle text-decoration-none mx-2 ms_question_icon">
+                        <i class="fa-solid fa-question"></i>
+                    </a>
+
+                    <a href="#" class="d-none d-lg-block link-secondary text-decoration-none mx-2">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </a>
+                    
+                    <a href="#" class="d-block link-warning text-decoration-none mx-2" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
+
+                    <ul class="dropdown-menu text-small shadow">
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </header>
+
+    <main>
+        <section id="ms_side_bar">
+
+        </section>
+
+        <section id="ms_content">
+
+        </section>
+    </main>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
