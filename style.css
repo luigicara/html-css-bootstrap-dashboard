@@ -34,6 +34,22 @@ input.bg-secondary[type=search]  {
     width: 1rem;
 }
 
-main {
-    margin-top: 70px;
+#ms_side_bar {
+    width: 150px;
+    height: calc(100vh - 70px);
+    background-color: #051e34;
+}
+
+#ms_content {
+    height: calc(100vh - 70px);
+}
+
+#ms_side_bar .btn-outline-light {
+    --bs-btn-hover-bg: rgba(248, 249, 250, 0.700);
+}
+
+@media screen and (max-width:991px) {
+    #ms_side_bar {
+        width: 50px;
+    }
 }

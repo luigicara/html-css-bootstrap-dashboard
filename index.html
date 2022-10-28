@@ -55,15 +55,45 @@
                 </div>
             </div>
         </div>
-      </header>
+    </header>
 
-    <main>
-        <section id="ms_side_bar">
+    <main class="d-flex">
+        <section id="ms_side_bar" class="flex-shrink-0 d-flex flex-column justify-content-between">
+            <div class="d-flex justify-content-center w-100">
+                <ul class="nav flex-column my-3 overflow-hidden">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light text-white text-start rounded-0 border-0" href="#" role="button">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="d-none d-lg-inline-block"> Home</span>
+                        </a>
+                    </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light text-white text-start rounded-0 border-0" href="#" role="button">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span class="d-none d-lg-inline-block"> Stats</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light text-white text-start rounded-0 border-0" href="#" role="button">
+                            <i class="fa-solid fa-signal"></i>
+                            <span class="d-none d-lg-inline-block"> Signals</span>
+                        </a>
+                    </li>
+                  </ul>
+            </div>
+
+            <div class="d-flex justify-content-center w-100 mb-3">
+                <a class="d-flex justify-content-center d-lg-block nav-link btn btn-outline-light text-white text-start rounded-0 border-0" href="#" role="button">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="d-none d-lg-inline-block"> Admin</span>
+                </a>
+            </div>
         </section>
 
-        <section id="ms_content">
-
+        <section id="ms_content" class="flex-grow-1 overflow-auto">
+            
         </section>
     </main>
     
