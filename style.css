@@ -48,6 +48,14 @@ input.bg-secondary[type=search]  {
     --bs-btn-hover-bg: rgba(248, 249, 250, 0.700);
 }
 
+#ms_top_bar {
+    background-color: #1b72e8;
+}
+
+.badge {
+    background-color: #053c6daf;
+}
+
 @media screen and (max-width:991px) {
     #ms_side_bar {
         width: 50px;
