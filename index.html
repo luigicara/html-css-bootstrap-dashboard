@@ -95,7 +95,7 @@
         <section id="ms_content" class="flex-grow-1 overflow-auto">
             
             <!-- TOP-BAR -->
-            <div id="ms_top_bar" class="container-fluid">
+            <div id="ms_top_bar" class="container-fluid mb-3">
                 <div class="row py-3">
                     <div class="col-lg-8 mb-3 mb-lg-0">
                         <div>
@@ -128,26 +128,326 @@
             <!-- CARDS -->
             <div id="ms_cards" class="container-fluid">
                 <div class="row">
-
+                    <!-- LEFT COLUMN -->
                     <div class="col-lg-8">
-                        <div class="card">
+                        <!-- TABLE CARD -->
+                        <div class="card mb-3">
                             <div class="card-header d-flex justify-content-between">
                                 <h3 class="card-title">Prossime Classi</h3>
-                                <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+
+                                <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                                     +
                                 </button>
+
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Aggiungi Classe</h5>
+
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="offcanvas-body">
+                                        <form action="">
+                                            <div class="mb-3">
+                                                <label for="NameInput" class="form-label">Nome</label>
+
+                                                <input type="text" class="form-control" id="NameInput" placeholder="Classe">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="DateInput" class="form-label">Data Inizio</label>
+
+                                                <input type="date" class="form-control" id="DateInput" placeholder="gg / mm / aaaa">
+                                            </div>
+
+                                            <button type="submit" class="btn btn-primary">Salva</button>
+
+                                            <button type="reset" class="btn btn-warning">Reset</button>
+                                        </form>
+                                    </div>
+                                  </div>
                             </div>
                             
-                            
+                            <div class="card-body table-resp">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr class="d-flex">
+                                            <th scope="col" class="col col-lg-3 col-xl-5 col-xxl-6 text-nowrap">Nome</th>
+                                            <th scope="col" class="col text-center text-nowrap">Data Inizio</th>
+                                            <th scope="col" class="col text-center text-nowrap">ROI</th>
+                                            <th scope="col" class="col text-center text-nowrap">Stato</th>
+                                            <th scope="col" class="col text-center text-nowrap">Azioni</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <!-- ROW-1 -->
+                                        <tr class="d-flex">
+                                            <td class="col col-lg-3 col-xl-5 col-xxl-6 text-nowrap">Classe 75</td>
+                                            <td class="col text-center text-nowrap">15 Feb 2021</td>
+                                            <td class="col text-center text-nowrap">20%</td>
+                                            <td class="col text-center text-nowrap">
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td class="col text-center text-nowrap">
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <!-- ROW-2 -->
+                                        <tr class="d-flex">
+                                            <td class="col col-lg-3 col-xl-5 col-xxl-6 text-nowrap">Classe 75</td>
+                                            <td class="col text-center text-nowrap">15 Feb 2021</td>
+                                            <td class="col text-center text-nowrap">20%</td>
+                                            <td class="col text-center text-nowrap">
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td class="col text-center text-nowrap">
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <!-- ROW-3 -->
+                                        <tr class="d-flex">
+                                            <td class="col col-lg-3 col-xl-5 col-xxl-6 text-nowrap">Classe 75</td>
+                                            <td class="col text-center text-nowrap">15 Feb 2021</td>
+                                            <td class="col text-center text-nowrap">20%</td>
+                                            <td class="col text-center text-nowrap">
+                                                <span class="badge text-bg-warning">Process</span>
+                                            </td>
+                                            <td class="col text-center text-nowrap">
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <!-- ROW-4 -->
+                                        <tr class="d-flex">
+                                            <td class="col col-lg-3 col-xl-5 col-xxl-6 text-nowrap">Classe 75</td>
+                                            <td class="col text-center text-nowrap">15 Feb 2021</td>
+                                            <td class="col text-center text-nowrap">20%</td>
+                                            <td class="col text-center text-nowrap">
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td class="col text-center text-nowrap">
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <!-- ROW-5 -->
+                                        <tr class="d-flex">
+                                            <td class="col col-lg-3 col-xl-5 col-xxl-6 text-nowrap">Classe 75</td>
+                                            <td class="col text-center text-nowrap">15 Feb 2021</td>
+                                            <td class="col text-center text-nowrap">20%</td>
+                                            <td class="col text-center text-nowrap">
+                                                <span class="badge text-bg-danger">Failed</span>
+                                            </td>
+                                            <td class="col text-center text-nowrap">
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <!-- ROW-6 -->
+                                        <tr class="d-flex">
+                                            <td class="col col-lg-3 col-xl-5 col-xxl-6 text-nowrap">Classe 75</td>
+                                            <td class="col text-center text-nowrap">15 Feb 2021</td>
+                                            <td class="col text-center text-nowrap">20%</td>
+                                            <td class="col text-center text-nowrap">
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td class="col text-center text-nowrap">
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <!-- ROW-7 -->
+                                        <tr class="d-flex">
+                                            <td class="col col-lg-3 col-xl-5 col-xxl-6 text-nowrap">Classe 75</td>
+                                            <td class="col text-center text-nowrap">15 Feb 2021</td>
+                                            <td class="col text-center text-nowrap">20%</td>
+                                            <td class="col text-center text-nowrap">
+                                                <span class="badge text-bg-danger">Failed</span>
+                                            </td>
+                                            <td class="col text-center text-nowrap">
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <!-- ROW-8 -->
+                                        <tr class="d-flex">
+                                            <td class="col col-lg-3 col-xl-5 col-xxl-6 text-nowrap">Classe 75</td>
+                                            <td class="col text-center text-nowrap">15 Feb 2021</td>
+                                            <td class="col text-center text-nowrap">20%</td>
+                                            <td class="col text-center text-nowrap">
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td class="col text-center text-nowrap">
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- FAQ CARD -->
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                <h3 class="card-title">
+                                    F.A.Q
+                                </h3>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item border-0 border-bottom">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                          Accordion Item #1
+                                            </button>
+                                        </h2>
+
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                                            <div class="accordion-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, reiciendis ipsa ab impedit nisi error iste facilis suscipit magnam nobis numquam rerum odio voluptates minima perferendis repellendus iusto nam voluptatem.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item border-0 border-bottom">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Accordion Item #2
+                                            </button>
+                                        </h2>
+
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+
+                                            <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita neque quia labore itaque in, excepturi vero quos unde libero consectetur culpa quibusdam sit esse quas ducimus repellendus velit, hic blanditiis?
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item border-0 border-bottom">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Accordion Item #3
+                                            </button>
+                                        </h2>
+
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+
+                                            <div class="accordion-body">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, exercitationem corporis rem fuga ipsum quia libero voluptates soluta officiis sed distinctio officia, repudiandae omnis consequatur voluptas aut ipsa natus inventore!
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
                         </div>
                     </div>
-                    
+
+                    <!-- RIGHT COLUMN -->
                     <div class="col-lg-4">
-                        <div class="card">
+                        <!-- TODO CARD -->
+                        <div class="card mb-3">
                             <div class="card-header">
                                 <h3 class="card-title">Todo</h3>
                             </div>
                             
+                            <div class="card-body">
+                                <div class="card">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <input type="checkbox">
+                                            Kickoff nuove classi
+                                        </li>
+                                        
+                                        <li class="list-group-item">
+                                            <input type="checkbox">
+                                            Lezione su Bootstrap 5 in classe #75
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <input type="checkbox">
+                                            Controllare username GitHub studenti
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- STATS CARD -->
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="card">
+                                    <img src="img/stats.jpeg" class="card-img-top" alt="stats">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Utenti attivi</h5>
+                                        <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                    </div>
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Gennaio: 1200</li>
+                                        <li class="list-group-item">Febbraio: 800</li>
+                                        <li class="list-group-item">Marzo: 1500</li>
+                                    </ul>
+
+                                    <div class="card-body">
+                                        <a href="#" class="card-link">Visualizza report approfondito</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
